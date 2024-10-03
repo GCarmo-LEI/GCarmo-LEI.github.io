@@ -1,0 +1,31 @@
+body {
+    background-color: #CFB53B;
+    #titulo {text-align: center;font-family: sans-serif ;font-weight: bold ;font-size: xx-large;}
+    #subtitulo {font-family: sans-serif;}
+}
+
+.image {
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
+.botton {
+    div {
+        padding: 3px;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+    
+    div hover {
+        background-color: blue;
+    }
+    
+}
+
