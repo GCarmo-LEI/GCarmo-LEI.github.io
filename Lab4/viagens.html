@@ -2,73 +2,108 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
-        <title>Quizz</title>
+        <link rel="stylesheet" href="styles.css">
+        <title>Viagens</title>
     </head>
 
     <body>
         <header>
-            <h1>A Minha Cidade</h1>
-        </header>
-        <img src="images/Vegas1.jpeg" alt="Lisboa">
-            <br>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimédia</a>
-                <a href="info.html">Informação</a>
-                <a href="quizz.html">Quizz</a>
-                <a href="viagens.html">Viagens</a>
+        <div class="navbar">
+            <nav class="menu">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="local.html">Localização</a></li>
+                <li><a href="multimedia.html">Multimédia</a></li>
+                <li><a href="info.html">Informação</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="viagens.html">Viagens</a></li>
+              </ul>
             </nav>
-
-        <header>
-            <h2>Viagens</h2>
-        </header>
-        <main>
-            <fieldset>
-                <br>
-                <label for="nome">Nome*:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-
-                <label for="apelido">Apelido:</label>
-                <input type="text" id="apelido" name="apelido"><br><br>
-
-                <label for="email">Email*:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="data-partida">Data de Partida*:</label>
-                <input type="date" id="data-partida" name="data-partida" required><br><br>
-
-                <label for="data-regresso">Data de Regresso:</label>
-                <input type="date" id="data-regresso" name="data-regresso"><br><br>
-
-                <label for="num-passageiros">Número de Passageiros:</label>
-                <input type="number" id="num-passageiros" name="num-passageiros" min="1"><br><br>
-
-                <label for="transporte">Meio de Transporte Favorito:</label>
-                <select id="transporte" name="transporte">
-                    <option value="carro">Carro</option>
-                    <option value="comboio">Comboio</option>
-                    <option value="aviao">Avião</option>
-                <option value="outros">Outros</option>
-                </select><br><br>
-
-                <label for="servico">Serviço Desejado:</label><br>
-                <input type="radio" id="basico" name="servico" value="basico" required>
-                <label for="basico">Básico</label><br>
-                <input type="radio" id="premium" name="servico" value="premium" required>
-                <label for="premium">Premium</label><br><br>
-
-                <label for="pedidos">Pedidos Especiais:</label><br>
-                <textarea id="pedidos" name="pedidos" rows="4" cols="50"></textarea><br><br>
-
-                <label for="valor">Valor que pretende gastar por pessoa e por dia (€):</label>
-                <input type="number" id="valor" name="valor" min="0" step="0.01"><br><br>
-
-                <button type="submit">Submeter</button>
-            </fieldset>
-    
-        </main>
+          </div>
+        </header> 
         
+        <main>
+
+            <br>
+            <div class="image-container">
+                <img src="images/Vegas8.jpg" alt="Las Vegas">
+                <img src="images/Vegas7.jpg" alt="Las Vegas">
+                <img src="images/Vegas9.jpg" alt="Las Vegas">
+            </div>
+
+            <br><br>
+            <section class="section">
+                <br>
+                <h1>Viagens</h1>
+                <br>
+                <fieldset>
+                    <br>
+                    <label for="nome">Nome*:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+    
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" id="apelido" name="apelido"><br><br>
+    
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <label for="data-partida">Data de Partida*:</label>
+                    <input type="date" id="data-partida" name="data-partida" required><br><br>
+    
+                    <label for="data-regresso">Data de Regresso:</label>
+                    <input type="date" id="data-regresso" name="data-regresso"><br><br>
+    
+                    <label for="num-passageiros">Número de Passageiros:</label>
+                    <input type="number" id="num-passageiros" name="num-passageiros" min="1"><br><br>
+    
+                    <label for="transporte">Meio de Transporte Favorito:</label>
+                    <select id="transporte" name="transporte">
+                        <option value="carro">Carro</option>
+                        <option value="comboio">Comboio</option>
+                        <option value="aviao">Avião</option>
+                    <option value="outros">Outros</option>
+                    </select><br><br>
+    
+                    <label for="servico">Serviço Desejado:</label><br>
+                    <input type="radio" id="basico" name="servico" value="basico" required>
+                    <label for="basico">Básico</label><br>
+                    <input type="radio" id="premium" name="servico" value="premium" required>
+                    <label for="premium">Premium</label><br><br>
+    
+                    <label for="pedidos">Pedidos Especiais:</label><br>
+                    <textarea id="pedidos" name="pedidos" rows="4" cols="50"></textarea><br><br>
+    
+                    <label for="valor">Valor que pretende gastar por pessoa e por dia (€):</label>
+                    <input type="number" id="valor" name="valor" min="0" step="0.01"><br><br>
+    
+                </fieldset>
+
+                <br>
+                <button type="submit">Submeter</button>
+                <br><br>
+            </section>
+
+            <br><br><br><br>
+
+        </main>
+        <footer>
+            <p>DIW 2024</p>
+        </footer>
     </body>
 </html>

@@ -17,15 +17,11 @@ body {
     padding: 20px;
   }
   
-  .logo img {
-    height: 60px; /* Adjust logo size */
-  }
-  
   .menu ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 25px; /* Space between each menu item */
+    gap: 25px; 
   }
   
   .menu li {
@@ -40,36 +36,63 @@ body {
   }
   
   .menu a:hover {
-    text-decoration: underline; /* Optional hover effect */
+    text-decoration: underline; 
   }
 
-body {
-    background-color: White;
-    #titulo {text-align: center;font-family: sans-serif ;font-weight: bold ;font-size: xx-large;}
-    #subtitulo {font-family: sans-serif;}
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
-.image {
-    width: 600px;
-    height: auto;
+header {
+    background-color: #333;
 }
 
-.centralizar {
-    display: flex;
+.nav-list a:hover {
+  color: #ccc;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+  margin-top: 50px;
+}
+
+.image-container img {
+  width: 32%; 
+  height: auto;
+  margin: 5px;
+  border-radius: 5px; 
+}
+
+
+.section {
+    text-align: center;
     justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.botton {
-    div {
-        padding: 3px;
-        text-align: center;
-        background-color: white;
-        color: black;
-    }
-    
-    div hover {
-        background-color: blue;
-    }
-    
+.section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
+.section p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

@@ -2,112 +2,149 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
         <title>Quizz</title>
     </head>
 
     <body>
         <header>
-            <h1>A Minha Cidade</h1>
-        </header>
-        <img src="images/Vegas1.jpeg" alt="Lisboa">
-            <br>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimédia</a>
-                <a href="info.html">Informação</a>
-                <a href="quizz.html">Quizz</a>
-                <a href="viagens.html">Viagens</a>
+        <div class="navbar">
+            <nav class="menu">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="local.html">Localização</a></li>
+                <li><a href="multimedia.html">Multimédia</a></li>
+                <li><a href="info.html">Informação</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="viagens.html">Viagens</a></li>
+              </ul>
             </nav>
-
-        <header>
-            <h2>Quizz</h2>
-        </header>
+          </div>
+        </header> 
+        
         <main>
+
+            <br>
+            <div class="image-container">
+                <img src="images/Vegas8.jpg" alt="Las Vegas">
+                <img src="images/Vegas7.jpg" alt="Las Vegas">
+                <img src="images/Vegas9.jpg" alt="Las Vegas">
+            </div>
+
+            <br><br>
+            <section class="section">
+                <br>
+                <h1>Quizz</h1>
+                <br>
                 <fieldset>
-                  <legend>Dados Pessoais</legend>
-                  
-                  <p>
-                  <label for="nome">Nome:</label>
-                  <input type="text" id="nome" name="nome" placeholder="Insira o seu nome" required autofocus>
-                  </p>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira o seu nome" required autofocus>
+                    </p>
+  
+                    <p>
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" id="apelido" name="apelido" placeholder="Insira o seu apelido" required>
+                    </p>
+  
+                    <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Insira o seu email" autocomplete="email" required>
+                    </p>
+                  </fieldset>
 
-                  <p>
-                  <label for="apelido">Apelido:</label>
-                  <input type="text" id="apelido" name="apelido" placeholder="Insira o seu apelido" required>
-                  </p>
-
-                  <p>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" placeholder="Insira o seu email" autocomplete="email" required>
-                  </p>
-                </fieldset>
-              
-                <fieldset>
-                  <legend>Quizz sobre Las Vegas</legend>
+                  <br><br>
+                
+                  <fieldset>
+                    <legend>Quizz sobre Las Vegas</legend>
+  
+                    <br>
+                    <label>Qual o hotel mais famoso de Las Vegas?</label>
+                    <br>
+                    <input type="checkbox" id="Ceasars Palace" name="hotel" value="Ceasars Palace">
+                    <label for="Ceasars Palace">Ceasars Palace</label>
+                    <input type="checkbox" id="Bellagio" name="hotel" value="Bellagio">
+                    <label for="Bellagio">Bellagio</label>
+                    <input type="checkbox" id="The Venetian" name="hotel" value="The Venetian">
+                    <label for="The Venetian">The Venetian</label>
+                    <br><br>
+                    
+                    <label for="populacao">Qual é a população aproximada de Las Vegas?</label>
+                    <input type="number" id="populacao" name="populacao" min="1000" max="10000000" step="1000" required>
+                    <br><br>
+  
+                    <label>Qual é a melhor época para visitar Las Vegas?</label>
+                    <br>
+                    <input type="radio" id="verao" name="epoca" value="verão">
+                    <label for="verao">Verão</label>
+                    <input type="radio" id="inverno" name="epoca" value="inverno">
+                    <label for="inverno">Inverno</label>
+                    <input type="radio" id="primavera" name="epoca" value="primavera">
+                    <label for="primavera">Primavera</label>
+                    </p>
+  
+                    <label>Qual destas atrações é a mais famosa de Las Vegas?</label>
+                    <br>
+                    <input type="checkbox" id="strip" name="atracoes" value="Las Vegas Strip">
+                    <label for="strip">Las Vegas Strip</label>
+                    <input type="checkbox" id="fremont" name="atracoes" value="Fremont Street">
+                    <label for="fremont">Fremont Street</label>
+                    <input type="checkbox" id="cirque" name="atracoes" value="Cirque du Soleil">
+                    <label for="cirque">Cirque du Soleil</label>
+                    <br><br>
+                
+                    <label for="cor">Escolha uma cor que represente Las Vegas para você:</label>
+                    <input type="color" id="cor" name="cor" value="#ff5733">
+                    <br><br>
+  
+                    <label>Qual o valor jogado anualmente nos casinos de Las Vegas?</label>
+                    <br>
+                    <input type="radio" id="15" name="valor" value="15 Mil Milhões">
+                    <label for="15 Mil Milhões">15 Mil Milhões</label>
+                    <input type="radio" id="18" name="valor" value="18 Mil Milhões">
+                    <label for="18 Mil Milhões">18 Mil Milhões</label>
+                    <input type="radio" id="9" name="valor" value="9 Mil Milhões">
+                    <label for="9 Mil Milhões">9 Mil Milhões</label>
+                    <br><br>
+  
+                    <label for="satisfacao">Em uma escala de 1 a 10, quanto você gostaria de visitar Las Vegas?</label><br>
+                    <input type="range" id="satisfacao" name="satisfacao" min="1" max="10" step="1" value="5">
+                    <br><br>
+  
+  
+                  </datalist>
+                  </fieldset>
 
                   <br>
-                  <label>Qual o hotel mais famoso de Las Vegas?</label>
-                  <br>
-                  <input type="checkbox" id="Ceasars Palace" name="hotel" value="Ceasars Palace">
-                  <label for="Ceasars Palace">Ceasars Palace</label>
-                  <input type="checkbox" id="Bellagio" name="hotel" value="Bellagio">
-                  <label for="Bellagio">Bellagio</label>
-                  <input type="checkbox" id="The Venetian" name="hotel" value="The Venetian">
-                  <label for="The Venetian">The Venetian</label>
-                  <br><br>
-                  
-                  <label for="populacao">Qual é a população aproximada de Las Vegas?</label>
-                  <input type="number" id="populacao" name="populacao" min="1000" max="10000000" step="1000" required>
-                  <br><br>
+  
+                  <input type="reset" value="Limpar formulário">
+                  <input type="submit" value="Submeter">
+                <br><br>
+            </section>
 
-                  <label>Qual é a melhor época para visitar Las Vegas?</label>
-                  <br>
-                  <input type="radio" id="verao" name="epoca" value="verão">
-                  <label for="verao">Verão</label>
-                  <input type="radio" id="inverno" name="epoca" value="inverno">
-                  <label for="inverno">Inverno</label>
-                  <input type="radio" id="primavera" name="epoca" value="primavera">
-                  <label for="primavera">Primavera</label>
-                  </p>
+            <br><br><br><br>
 
-                  <label>Qual destas atrações é a mais famosa de Las Vegas?</label>
-                  <br>
-                  <input type="checkbox" id="strip" name="atracoes" value="Las Vegas Strip">
-                  <label for="strip">Las Vegas Strip</label>
-                  <input type="checkbox" id="fremont" name="atracoes" value="Fremont Street">
-                  <label for="fremont">Fremont Street</label>
-                  <input type="checkbox" id="cirque" name="atracoes" value="Cirque du Soleil">
-                  <label for="cirque">Cirque du Soleil</label>
-                  <br><br>
-              
-                  <label for="cor">Escolha uma cor que represente Las Vegas para você:</label>
-                  <input type="color" id="cor" name="cor" value="#ff5733">
-                  <br><br>
-
-                  <label>Qual o valor jogado anualmente nos casinos de Las Vegas?</label>
-                  <br>
-                  <input type="radio" id="15" name="valor" value="15 Mil Milhões">
-                  <label for="15 Mil Milhões">15 Mil Milhões</label>
-                  <input type="radio" id="18" name="valor" value="18 Mil Milhões">
-                  <label for="18 Mil Milhões">18 Mil Milhões</label>
-                  <input type="radio" id="9" name="valor" value="9 Mil Milhões">
-                  <label for="9 Mil Milhões">9 Mil Milhões</label>
-                  <br><br>
-
-                  <label for="satisfacao">Em uma escala de 1 a 10, quanto você gostaria de visitar Las Vegas?</label><br>
-                  <input type="range" id="satisfacao" name="satisfacao" min="1" max="10" step="1" value="5">
-                  <br><br>
-
-
-                </datalist>
-                </fieldset>
-
-                <input type="reset" value="Limpar formulário">
-                <input type="submit" value="Enviar Quizz">
-        
         </main>
-        
+        <footer>
+            <p>DIW 2024</p>
+        </footer>
     </body>
 </html>
