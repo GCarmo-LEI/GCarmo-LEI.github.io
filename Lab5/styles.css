@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #000; /* Black background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: right, space-between;
+    padding: 20px;
+  }
+  
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px; 
+  }
+  
+  .menu li {
+    margin: 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline; 
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+}
+
+.nav-list a:hover {
+  color: #ccc;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+  margin-top: 50px;
+}
+
+.image-container img {
+  width: 32%; 
+  height: auto;
+  margin: 5px;
+  border-radius: 5px; 
+}
+
+
+.section {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.ranking2 ul {
+  list-style-type: circle;
+  }
+  
+  ul li:nth-child(2),
+  ul li:nth-child(4) {
+    color: darkblue;
+}
+
+.ranking1 ol {
+    list-style-type: upper-roman;
+  }
+  
+    ol li:nth-child(2),
+    ol li:nth-child(4) {
+      color: darkblue;
+}
+
+.section2 {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.centrarfoto1 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  height: vh;      
+}
+
+
