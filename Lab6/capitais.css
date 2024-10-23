@@ -10,7 +10,9 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    z-index: 1000;
 }
+
 
 .menu .left-item {
     color: white;
@@ -104,9 +106,8 @@ body {
     background-color: lightblue;
     height: 96vh;
     align-items: center;
-    justify-content: center; /* Alinha as seções horizontalmente */
-    column-gap: 30px; /* Espaçamento horizontal entre as seções */
-    row-gap: 0; /* Espaçamento vertical entre as linhas de seções */
+    justify-content: center; 
+    column-gap: 30px; 
     padding: 20px;
 }
   
@@ -114,29 +115,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px; /* Define a largura total de cada bloco de cidade */
-    height: 140px; /* Altura de cada bloco de cidade */
+    width: 400px; 
+    height: 140px; 
     background-color: #ffffff;
-    border-radius: 20px; /* Aplica bordas arredondadas ao bloco */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
-    overflow: hidden; /* Garante que o conteúdo siga os contornos arredondados */
+    border-radius: 20px; 
+    overflow: hidden; 
 }
 
   #cidades section:hover {
-    background-color: lightgray; /* Muda a cor de fundo ao passar o mouse */
+    background-color: lightgray; 
 }
 
   #cidades img {
-    width: 50%; /* Define a largura da imagem para ocupar metade do espaço da seção */
-    height: 100%; /* A imagem ocupa toda a altura da seção */
-    object-fit: cover; /* Ajusta a imagem para preencher sem distorções */
-    border-top-left-radius: 20px; /* Arredonda os cantos superiores e inferiores da imagem */
+    width: 50%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px;
 }
 
   
   #cidades div {
-      width: 50%; /* O texto ocupa a outra metade da seção */
+      width: 50%;
       display: flex;
       align-items: center;
       justify-content: center;

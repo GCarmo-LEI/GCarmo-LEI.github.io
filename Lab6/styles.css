@@ -8,6 +8,7 @@ body {
     height: 40px;
     background-color: black; /* Black background */
     position: fixed;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
