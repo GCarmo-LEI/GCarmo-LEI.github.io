@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+
+
+    header {
+        margin-top: auto;
+        justify-content: center;
+        padding: 20px;
+        background-color: grey;
+        margin: 20px auto;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+        max-width: auto;
+        font-size: bold;
+      }
+
+
+      section {
+        margin-top: auto;
+        justify-content: center;
+        padding: 20px;
+        background-color: white;
+        margin: 20px auto;
+        border-radius: 5px; 
+        max-width: auto;
+    }
+
+    pre {
+        font-family: sans-serif;
+        color: black;
+        align-items: center;
+        font-size: small;
+    }
+
+
+    .seccao1 {
+        align-items: center ;
+    }
+
+    footer {
+        margin-top: auto;
+        justify-content: center;
+        padding: 20px;
+        background-color: grey;
+        margin: 20px auto;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+        max-width: auto;
+    }
+
+    img{
+        width: 15vw;
+        height: auto;
+    }
+
+      #Labs {
+        display: inline-flex;
+      }
+
+      #Labs section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px; 
+        height: 18px; 
+        color: white;
+        margin: 5px;
+        background-color: grey;
+        border-radius: 6px; 
+    }
+    
+      #Labs section:hover {
+        background-color: black; 
+    }
+
+}
+
+
+
+
+@media (max-width: 530px) {
+
+    #Labs {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 530px) {
+
+
+}
