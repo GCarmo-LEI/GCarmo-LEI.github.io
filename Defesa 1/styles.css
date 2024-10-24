@@ -84,16 +84,18 @@ body {
 
 
 
-@media (max-width: 530px) {
+@media (max-width: 590px) {
 
     #Labs {
         flex-wrap: wrap;
     }
+
+
 }
 
 
 
-@media (max-width: 530px) {
+@media (min-width: 530px) {
 
-
+    
 }
