@@ -1,21 +1,19 @@
 body {
-    background-color: lightblue;
     font-family: Arial, sans-serif;
-    font-size: large;
-}
-
-nav {
-    margin-top: 30px;
+    background-color: lightblue;
     text-align: center;
+    padding: 50px;
+
 }
-nav a {
-    margin: 10px;
+a {
+    display: block;
+    margin: 20px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     background-color: #007bff;
-    padding: 10px;
     border-radius: 5px;
 }
-nav a:hover {
+a:hover {
     background-color: #0056b3;
 }

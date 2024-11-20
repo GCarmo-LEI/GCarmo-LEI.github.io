@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin: 20px;
+}
+h1 {
+    color: #333;
+}
+#event-info {
+    margin: 20px auto;
+    width: 60%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#output {
+    margin-top: 20px;
+}
+.highlight {
+    background-color: #ffeb3b;
+}
