@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: rgb(237, 235, 235);
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    background-color: #800080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.cabecalho .logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+h2{
+    font-size: 30px;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+footer {
+    
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    color: black;
+}

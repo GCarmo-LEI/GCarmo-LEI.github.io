@@ -11,20 +11,39 @@
         1. <span id="hoverText">Passa por aqui!</span>
     <br><br><br>
         2. <span id="colorText">Pinta-me!</span>
-        <button onclick="changeColor('red')">Red</button>
-        <button onclick="changeColor('green')">Green</button>
-        <button onclick="changeColor('blue')">Blue</button>
+        <button data-color="vermelho">Vermelho</button>
+        <button data-color="verde">Verde</button>
+        <button data-color="azul">Azul</button>
     <br><br><br>
         3. Experimenta escrever...
         <input type="text" id="colorChangingInput" oninput="randomizeInputColor()">
     <br><br><br>
-        4. Escolha uma cor em inglês: 
-        <input type="text" id="colorInput" oninput="changeBackgroundColor()">
-        <button onclick="submitColor()">submeter</button>
+        4. Escolha uma cor: 
+        <select id="colorSelect" onchange="changeBackgroundColor(this)">
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+        </select>
     <br><br><br>
         5.
         <button onclick="incrementCounter()">Conta!</button>
         <span id="counter">0</span>
+
+        <br><br><br>
+        6. 
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+            <button type="submit">Submeter</button>
+        </form>
+        <p id="message"></p> 
+        
+        <br><br><br>
+        7. Automatic Counter: 
+        <span id="autoCounter">0</span>
+
 
 
     <script src="main.js"></script>
