@@ -1,7 +1,13 @@
 body {
     margin: 0;
-    background-color: rgb(237, 235, 235);
+    padding: 0;
+    height: 100%; 
+    background-color: white;
     font-family: Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
 }
 
 .cabecalho {
@@ -31,25 +37,86 @@ body {
 }
 
 
-h2{
+h2 {
     font-size: 30px;
     font-family: inherit;
+}
+
+main {
+    padding: 15px;
+}
+
+#produtos, #Cesto {
+    margin-bottom: 2rem;
+}
+
+.lista-produtos, .Cesto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-
-
-
-
-
-
-
-
-footer {
-    
     text-align: center;
-    padding: 10px;
-    background-color: red;
-    color: black;
 }
+
+article img {
+    height: auto; 
+    max-height: 100px; 
+    object-fit: contain; 
+    margin-bottom: 1rem;
+}
+
+article h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+article p {
+    margin: 0.5rem 0;
+}
+
+article button {
+    margin-top: auto; 
+    background-color: lightgray;
+    color: white;
+    font-weight: bold;
+    border: white;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+article button:hover {
+    background-color: darkgray;
+}
+
+.Cesto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+    }
+
+
+.Cesto .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-column: 1 / 6;
+    text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #800080;
+        color: white;
+    }
