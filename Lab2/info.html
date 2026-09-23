@@ -4,21 +4,106 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Melbourne</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 500px;
+        margin: 1rem 0;
+      }
+      th,
+      td {
+        border: 1px solid #333;
+        padding: 8px 12px;
+        text-align: center;
+      }
+      th {
+        background-color: #1b2a4a;
+        color: #ffffff;
+      }
+      td {
+        color: #2b5f8a;
+      }
+      .curiosidades li {
+        margin-bottom: 0.5rem;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>A Minha Cidade</h1>
-    </header>
-
-    <main>
-      <h2>Informação</h2>
       <nav>
         <a href="index.html">Home</a>
         <a href="local.html">Localização</a>
         <a href="multimedia.html">Multimédia</a>
         <a href="info.html">Informação</a>
       </nav>
-      <p>A Minha Cidade É Muita Linda!!!</p>
+    </header>
+
+    <main>
+      <h2>Informações</h2>
+      <p>
+        Nesta página encontra dados demográficos e geográficos sobre Melbourne,
+        bem como algumas curiosidades sobre a cidade.
+      </p>
+
+      <table>
+        <tr>
+          <th rowspan="2">Demografia</th>
+          <td>População</td>
+          <td>5.435.590 hab</td>
+        </tr>
+        <tr>
+          <td>Densidade populacional</td>
+          <td>544 hab/km²</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Geografia</th>
+          <td>Área</td>
+          <td>9.993 km²</td>
+        </tr>
+        <tr>
+          <td>Região</td>
+          <td>Victoria</td>
+        </tr>
+        <tr>
+          <td>País</td>
+          <td>Austrália</td>
+        </tr>
+        <tr>
+          <th>Website</th>
+          <td colspan="2">
+            <a href="https://www.melbourne.vic.gov.au" target="_blank"
+              >www.melbourne.vic.gov.au</a
+            >
+          </td>
+        </tr>
+      </table>
+
+      <h3>Curiosidades</h3>
+      <ul class="curiosidades">
+        <li>
+          Melbourne foi a capital da Austrália entre 1901 e 1927, antes de
+          Camberra assumir esse papel.
+        </li>
+        <li>
+          A cidade é conhecida por ter "quatro estações num só dia", devido à
+          rapidez com que o tempo muda.
+        </li>
+        <li>
+          O sistema de elétricos (trams) de Melbourne é um dos maiores redes
+          urbanas de elétricos do mundo.
+        </li>
+        <li>
+          Melbourne já foi eleita várias vezes a cidade mais habitável do mundo
+          em vários rankings internacionais.
+        </li>
+        <li>
+          A cidade tem uma forte cultura de café, considerada uma das capitais
+          mundiais do café, com influência de imigrantes italianos e gregos.
+        </li>
+      </ul>
     </main>
 
     <footer>

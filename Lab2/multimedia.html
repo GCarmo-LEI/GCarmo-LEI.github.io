@@ -4,21 +4,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Melbourne</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .fotografias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .fotografias img {
+        width: 150px;
+        border-radius: 20px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>A Minha Cidade</h1>
-    </header>
-
-    <main>
-      <h2>Multimédia</h2>
       <nav>
         <a href="index.html">Home</a>
         <a href="local.html">Localização</a>
         <a href="multimedia.html">Multimédia</a>
         <a href="info.html">Informação</a>
       </nav>
-      <p>A Minha Cidade É Muita Linda!!!</p>
+    </header>
+
+    <main>
+      <h2>Multimédia</h2>
+      <p>Nesta página encontra conteúdos multimedia</p>
+
+      <p>
+        <a href="#fotografias">Fotografias</a>
+        <a href="#video">Vídeo</a>
+        <a href="#poema">Poema</a>
+      </p>
+
+      <section>
+        <h3 id="fotografias">Fotografias</h3>
+        <div class="fotografias">
+          <img src="images/Melbourne1.jpg" alt="skyline" />
+          <img src="images/Melbourne2.jpg" alt="skyline" />
+          <img src="images/Melbourne3.jpg" alt="skyline" />
+          <img src="images/Melbourne4.jpg" alt="skyline" />
+          <img src="images/Melbourne5.jpg" alt="skyline" />
+          <img src="images/Melbourne6.jpg" alt="skyline" />
+          <img src="images/Melbourne7.jpg" alt="skyline" />
+          <img src="images/Melbourne8.jpg" alt="skyline" />
+        </div>
+      </section>
+
+      <section>
+        <h3 id="video">Vídeo</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JidUIjTELUE?si=8EO9c5a_YrPNXwoM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section>
+        <h3 id="poema">Poesia</h3>
+        <div class="poema">
+          <p>No sul do mundo, onde o mapa se inclina,</p>
+          <p>corre o Yarra manso até à baía,</p>
+          <p>e a cidade acorda em luz que hesita</p>
+          <p>entre o sol de verão e a chuva fria.</p>
+
+          <p>Ruas de arte escondidas em becos,</p>
+          <p>elétricos a cortar o vento leve,</p>
+          <p>quatro estações cabem num só dia,</p>
+          <p>e ninguém sabe o tempo que se segue.</p>
+
+          <p>Do outro lado do globo, longe de casa,</p>
+          <p>Melbourne guarda um céu que não se cansa</p>
+          <p>de mudar — como quem também procura</p>
+          <p>um lugar seu nesta terra tão vasta.</p>
+        </div>
+      </section>
     </main>
 
     <footer>
