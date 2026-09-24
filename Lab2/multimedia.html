@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       .fotografias {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+        max-width: 900px;
       }
       .fotografias img {
-        width: 150px;
+        width: 100%;
+        margin: 0;
         border-radius: 20px;
       }
     </style>
