@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f4f1ec;
+  color: #222;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+a {
+  color: #205c29;
+}
+
+header {
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  background-color: #2e7d32;
+}
+
+nav a {
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+  background-color: #1b4d20;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+.imagem-home {
+  width: 700px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+.localizacao {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.localizacao p {
+  width: 40%;
+}
+
+.localizacao iframe {
+  width: 60%;
+  height: 400px;
+}
+
+.grelha-info {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas:
+    "dados dia"
+    "curiosidades noite"
+    "visitar .";
+  align-items: start;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.dados {
+  grid-area: dados;
+}
+
+.foto-dia {
+  grid-area: dia;
+}
+
+.curiosidades {
+  grid-area: curiosidades;
+}
+
+.foto-noite {
+  grid-area: noite;
+}
+
+.visitar {
+  grid-area: visitar;
+}
+
+.grelha-info article {
+  min-width: 0;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.grelha-info h3 {
+  margin-top: 0;
+}
+
+.grelha-info ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.grelha-info li {
+  margin-bottom: 8px;
+}
+
+.grelha-info figure {
+  min-width: 0;
+  margin: 0;
+  align-self: center;
+}
+
+.grelha-info img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tabela {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.multimedia {
+  max-width: none;
+  padding: 0;
+}
+
+.introducao {
+  padding: 30px;
+}
+
+.atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.multimedia section {
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#fotografias {
+  background-color: #e4eddf;
+}
+
+#video {
+  background-color: #dceaf3;
+}
+
+#poema {
+  background-color: #f3e3cd;
+  text-align: center;
+}
+
+.fotografias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.fotografias img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#video iframe {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+}
+
+.multimedia #destaque {
+  position: relative;
+  padding: 0;
+  background-color: #333;
+}
+
+#destaque img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#destaque h2 {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 15%;
+  color: white;
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px black;
+}
+
+#video-fundo {
+  position: relative;
+  background-color: #222;
+  color: white;
+}
+
+#video-fundo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#video-fundo h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px black;
+}
+
+#parallax {
+  background-color: #333;
+  background-image: url("images/melbourne-noite.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+#parallax h2 {
+  font-size: 4vw;
+}
+
+.tutoriais section {
+  margin-bottom: 40px;
+}
+
+.lista-codepens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tutoriais article {
+  min-width: 0;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.lista-codepens iframe {
+  width: 100%;
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  main,
+  .introducao {
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    width: calc(50% - 5px);
+    padding: 12px 5px;
+    background-color: #1b4d20;
+  }
+
+  nav a.ativo {
+    background-color: white;
+    color: #1b4d20;
+  }
+
+  .localizacao {
+    flex-direction: column;
+  }
+
+  .localizacao p,
+  .localizacao iframe {
+    width: 100%;
+  }
+
+  .localizacao iframe {
+    height: 300px;
+  }
+
+  .grelha-info {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "dados"
+      "dia"
+      "curiosidades"
+      "noite"
+      "visitar";
+    gap: 20px;
+  }
+
+  .multimedia {
+    padding: 0;
+  }
+
+  .multimedia section {
+    padding: 20px;
+  }
+
+  .fotografias {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fotografias img {
+    height: 120px;
+  }
+
+  #destaque h2,
+  #video-fundo h2,
+  #parallax h2 {
+    font-size: 7vw;
+  }
+
+  #parallax {
+    background-attachment: scroll;
+  }
+
+  .lista-codepens {
+  grid-template-columns: 1fr;
+}
+}

@@ -1,43 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gonçalo Carmo</title>
+    <title>Gonçalo Carmo - Interfaces Web</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header>
-      <h1>Primeira Pagina Web</h1>
-    </header>
 
+  <body>
     <main>
-      <p>Eis a minha primeira pagina web!</p>
-      <p>
-        Na Unidade Curricular
-        <a
-          target="_blank"
-          href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
-        >
-          Desenvolvimento de Interfaces Web
-        </a>
-      </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-      </ul>
-      <p>Iremos Criar Soluções Criativas!!!</p>
-      <ul>
-        <li><a href="Lab1/index.html">Lab 1</a></li>
-        <li><a href="Lab2/index.html">Lab 2</a></li>
-      </ul>
-      <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" />
+      <section id="inicio">
+        <header>
+          <h2>Gonçalo Carmo</h2>
+
+          <nav>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#disciplina">Interfaces Web</a></li>
+              <li><a href="tutoriais.html">Tutoriais</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="apresentacao">
+          <h1>Projetos da Disciplina de Interfaces Web</h1>
+          <p>Aprender a criar páginas web, um laboratório de cada vez.</p>
+          <a class="botao" href="#projetos">Ver os Labs →</a>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <h2>Os meus labs</h2>
+        <p>Aqui estão os labs realizados na disciplina.</p>
+
+        <div class="cards">
+          <article>
+            <h3>Laboratório 1</h3>
+            <p>O meu primeiro laboratório de Interfaces Web.</p>
+            <a class="botao" href="Lab1/index.html">Ver Lab 1</a>
+          </article>
+
+          <article>
+            <h3>Laboratório 2</h3>
+            <p>O trabalho desenvolvido no segundo laboratório.</p>
+            <a class="botao" href="Lab2/index.html">Ver Lab 2</a>
+          </article>
+
+          <article>
+            <h3>Laboratório 3</h3>
+            <p>O trabalho desenvolvido no terceiro laboratório.</p>
+            <a class="botao" href="Lab3/index.html">Ver Lab 3</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="disciplina">
+        <h2>Desenvolvimento de Interfaces Web</h2>
+
+        <div class="sobre-disciplina">
+          <div class="texto">
+            <p>Eis a minha primeira página web!</p>
+
+            <p>
+              Na Unidade Curricular
+              <a
+                href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
+              >
+                Desenvolvimento de Interfaces Web
+              </a>
+              vamos aprender:
+            </p>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React e Next.js</li>
+            </ul>
+
+            <p>Iremos criar soluções criativas!</p>
+          </div>
+
+          <img
+            src="images/diw.svg"
+            alt="Nuvem de palavras sobre Desenvolvimento de Interfaces Web"
+          />
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>Universidade Lusofona 2026/27</p>
+      <p>Gonçalo Carmo - Universidade Lusófona - 2026/27</p>
     </footer>
   </body>
 </html>

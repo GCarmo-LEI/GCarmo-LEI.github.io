@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melbourne - Multimédia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Melbourne</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="local.html">Localização</a>
+      <a class="ativo" href="multimedia.html">Multimédia</a>
+      <a href="info.html">Informação</a>
+    </nav>
+
+    <main class="multimedia">
+      <div class="introducao">
+        <h2>Multimédia</h2>
+        <p>Fotografias, vídeos e poesia sobre Melbourne.</p>
+
+        <div class="atalhos">
+          <a href="#fotografias">Fotografias</a>
+          <a href="#video">Vídeo</a>
+          <a href="#poema">Poesia</a>
+          <a href="#destaque">Imagem</a>
+          <a href="#video-fundo">Vídeo de fundo</a>
+          <a href="#parallax">Parallax</a>
+        </div>
+      </div>
+
+      <section id="fotografias">
+        <h2>Fotografias</h2>
+
+        <div class="fotografias">
+          <img src="images/Melbourne1.jpg" alt="Fotografia 1 de Melbourne" />
+          <img src="images/Melbourne2.jpg" alt="Fotografia 2 de Melbourne" />
+          <img src="images/Melbourne3.jpg" alt="Fotografia 3 de Melbourne" />
+          <img src="images/Melbourne4.jpg" alt="Fotografia 4 de Melbourne" />
+          <img src="images/Melbourne5.jpg" alt="Fotografia 5 de Melbourne" />
+          <img src="images/Melbourne6.jpg" alt="Fotografia 6 de Melbourne" />
+          <img src="images/Melbourne7.jpg" alt="Fotografia 7 de Melbourne" />
+          <img src="images/Melbourne8.jpg" alt="Fotografia 8 de Melbourne" />
+        </div>
+      </section>
+
+      <section id="video">
+        <h2>Vídeo</h2>
+
+        <iframe
+          src="https://www.youtube.com/embed/JidUIjTELUE"
+          title="Vídeo sobre Melbourne"
+          loading="lazy"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="poema">
+        <h2>Poesia</h2>
+
+        <p>
+          No sul do mundo, onde o mapa se inclina,<br />
+          corre o Yarra manso até à baía,<br />
+          e a cidade acorda em luz que hesita<br />
+          entre o sol de verão e a chuva fria.
+        </p>
+
+        <p>
+          Ruas de arte escondidas em becos,<br />
+          elétricos a cortar o vento leve,<br />
+          quatro estações cabem num só dia,<br />
+          e ninguém sabe o tempo que se segue.
+        </p>
+
+        <p>
+          Do outro lado do globo, longe de casa,<br />
+          Melbourne guarda um céu que não se cansa<br />
+          de mudar — como quem também procura<br />
+          um lugar seu nesta terra tão vasta.
+        </p>
+      </section>
+
+      <section id="destaque">
+        <img
+          src="images/melbourne-dia.jpg"
+          alt="Vista panorâmica de Melbourne"
+        />
+
+        <h2>Melbourne, uma cidade para descobrir.</h2>
+      </section>
+
+      <section id="video-fundo">
+        <!--
+          Descarrega o vídeo:
+          https://pixabay.com/videos/melbourne-australia-victoria-247250/
+
+          Guarda-o em Lab3/videos/melbourne.mp4
+        -->
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          preload="none"
+          poster="images/melbourne-noite.jpg"
+        >
+          <source src="videos/melbourne.mp4" type="video/mp4" />
+          O teu navegador não suporta vídeo HTML5.
+        </video>
+
+        <h2>Uma cidade em movimento.</h2>
+      </section>
+
+      <section id="parallax">
+        <h2>Entre o rio e a cidade.</h2>
+        <p>Continua a descer para observar o efeito parallax.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Gonçalo Carmo - DIW 2026/27</p>
+      <a href="../index.html">Voltar à página principal</a>
+    </footer>
+  </body>
+</html>

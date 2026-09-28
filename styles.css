@@ -1,6 +1,175 @@
-body {
-  background-color: #b3b3b3;
+* {
+  box-sizing: border-box;
 }
 
-img { width: 300px }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
+section {
+  height: 100vh;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+p, li {
+  line-height: 1.5;
+}
+
+#inicio {
+  position: relative;
+  background-color: #333;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header h2 {
+  font-size: 27px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.apresentacao {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  right: 30px;
+}
+
+.apresentacao h1 {
+  font-size: 36px;
+  max-width: 650px;
+}
+
+header,
+.apresentacao {
+  text-shadow: 1px 1px 3px black;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #235779;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.botao:hover {
+  background-color: #163b54;
+}
+
+#projetos {
+  background-color: #eee;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.cards article {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.cards h3 {
+  margin-top: 0;
+}
+
+#disciplina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dceaf3;
+}
+
+.sobre-disciplina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.texto {
+  width: 55%;
+}
+
+.texto a {
+  color: #174969;
+}
+
+.sobre-disciplina img {
+  width: 40%;
+  max-width: 400px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .apresentacao h1 {
+    font-size: 28px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .sobre-disciplina {
+    flex-direction: column;
+  }
+
+  .texto {
+    width: 100%;
+  }
+
+  .sobre-disciplina img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
