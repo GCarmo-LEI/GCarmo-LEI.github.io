@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4 - JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Explora o JavaScript</h1>
+      <p>Experimenta os diferentes eventos com o rato!</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. Passa por aqui!</h2>
+
+        <p
+          id="texto-rato"
+          onmouseover="passarRato()"
+          onmouseout="retirarRato()"
+        >
+          Passa o rato sobre este texto.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Pinta-me!</h2>
+
+        <p id="texto-cor">Escolhe uma cor para este texto.</p>
+
+        <button type="button" onclick="pintarTexto('red', 'vermelho')">
+          Vermelho
+        </button>
+
+        <button type="button" onclick="pintarTexto('green', 'verde')">
+          Verde
+        </button>
+
+        <button type="button" onclick="pintarTexto('blue', 'azul')">
+          Azul
+        </button>
+      </section>
+
+      <section>
+        <h2>3. Descobre a imagem</h2>
+
+        <p>
+          Faz duplo clique na imagem para alternar entre preto e branco e cores.
+        </p>
+
+        <figure>
+          <img
+            id="fotografia"
+            src="images/diw.svg"
+            alt="Fotografia utilizada na experiência de cores"
+            ondblclick="alterarImagem()"
+          />
+
+          <figcaption id="legenda">A imagem está a preto e branco.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>4. Move o rato!</h2>
+
+        <p>Move o rato dentro da área para descobrir as duas cores.</p>
+
+        <div
+          id="area"
+          onmousemove="moverRato(event)"
+          onmouseout="restaurarArea()"
+        >
+          Move o rato aqui!
+        </div>
+
+        <p id="posicao">Posição do rato: —</p>
+      </section>
+
+      <section>
+        <h2>5. Conta os cliques!</h2>
+
+        <button type="button" onclick="contar()">Conta!</button>
+        <span id="contador" aria-live="polite">0</span>
+
+        <button type="button" onclick="reiniciar()">Reiniciar</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Gonçalo Carmo - DIW 2026/27</p>
+      <a href="../index.html">Voltar à página principal</a>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
