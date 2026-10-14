@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos 2.0</title>
+
+    <link rel="stylesheet" href="eventos.css" />
+    <script src="eventos.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <ol>
+        <li>
+          <span id="passar">Passa por Aqui!</span>
+        </li>
+
+        <li>
+          <span id="pintar">Pinta-me</span>
+
+          <div class="botoes">
+            <button type="button" class="color" data-color="purple">
+              Purple
+            </button>
+
+            <button type="button" class="color" data-color="orange">
+              Orange
+            </button>
+
+            <button type="button" class="color" data-color="teal">Teal</button>
+          </div>
+        </li>
+
+        <li>
+          <label for="escrever">Experimenta escrever...</label>
+          <input type="text" id="escrever" autocomplete="off" />
+        </li>
+
+        <li>
+          <label for="cor-fundo">Escolha uma cor:</label>
+
+          <select id="cor-fundo">
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        </li>
+
+        <li>
+          <button type="button" id="incrementar">Incrementar</button>
+          <button type="button" id="decrementar">Decrementar</button>
+          <button type="button" id="reset">Reset</button>
+
+          <span id="contador">0</span>
+        </li>
+
+        <li>
+          <form id="formulario">
+            <input
+              type="text"
+              id="nome"
+              placeholder="Insira o seu nome"
+              aria-label="Nome"
+              required
+            />
+
+            <input
+              type="number"
+              id="idade"
+              placeholder="Insira a sua idade"
+              aria-label="Idade"
+              min="0"
+              step="1"
+              required
+            />
+
+            <button type="submit">Submeter</button>
+          </form>
+
+          <p id="mensagem" aria-live="polite"></p>
+        </li>
+
+        <li>
+          Contador automático:
+          <span id="contador-automatico">0</span>
+        </li>
+
+        <li>
+          <label for="direcao">Direção dos elementos:</label>
+
+          <select id="direcao">
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">line</option>
+            <option value="column-reverse">line-reverse</option>
+          </select>
+
+          <div id="container-flex">
+            <div class="bola"></div>
+            <div class="bola"></div>
+            <div class="bola"></div>
+            <div class="bola"></div>
+          </div>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
