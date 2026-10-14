@@ -4,6 +4,14 @@ body {
     font-size: large;
 }
 
+main {
+    padding-top: 3lh;
+}
+
+section {
+    margin-bottom: 2lh;
+}
+
 nav {
     margin-top: 30px;
     text-align: center;

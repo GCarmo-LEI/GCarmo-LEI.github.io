@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const colorChangingInput =
         document.querySelector('#colorChangingInput');
 
+    const colorForm = document.querySelector('#colorForm');
     const colorInput = document.querySelector('#colorInput');
-    const submitColor = document.querySelector('#submitColor');
 
     const counter = document.querySelector('#counter');
     const incrementButton = document.querySelector('#incrementCounter');
@@ -40,9 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    const changeBackgroundColor = () => {
-        document.body.style.backgroundColor =
-            colorInput.value.toLowerCase();
+    const changeBackgroundColor = (e) => {
+        e.preventDefault();
+
+        const color = colorInput.value.trim().toLowerCase();
+
+        if (color === '' || !CSS.supports('background-color', color)) {
+            colorInput.setCustomValidity(
+                'Introduz uma cor válida em inglês, como red, green ou blue.'
+            );
+
+            colorInput.reportValidity();
+            return;
+        }
+
+        colorInput.setCustomValidity('');
+        document.body.style.backgroundColor = color;
+    };
+
+    const limparErroCor = () => {
+        colorInput.setCustomValidity('');
     };
 
 
@@ -66,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     colorChangingInput.addEventListener('input', randomizeInputColor);
 
 
-    colorInput.addEventListener('input', changeBackgroundColor);
-    submitColor.addEventListener('click', changeBackgroundColor);
+    colorForm.onsubmit = changeBackgroundColor;
+    colorInput.addEventListener('input', limparErroCor);
 
 
     incrementButton.addEventListener('click', incrementCounter);
