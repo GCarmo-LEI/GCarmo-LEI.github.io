@@ -4,19 +4,10 @@ body {
     font-size: large;
 }
 
-main {
-    padding-top: 3lh;
-}
-
-section {
-    margin-bottom: 2lh;
-}
-
 nav {
     margin-top: 30px;
     text-align: center;
 }
-
 nav a {
     margin: 10px;
     text-decoration: none;
@@ -25,7 +16,6 @@ nav a {
     padding: 10px;
     border-radius: 5px;
 }
-
 nav a:hover {
     background-color: #0056b3;
 }

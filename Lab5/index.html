@@ -3,43 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventos 1.0</title>
-
+    <title>Eventos</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
   </head>
-
   <body>
-    <main>
-      <section aria-label="Passar o rato">
-        1. <span id="hoverText">Passa por aqui!</span>
-      </section>
+    <br /><br /><br />
+    1. <span id="hoverText">Passa por aqui!</span> <br /><br /><br />
+    2. <span id="colorText">Pinta-me!</span>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <br /><br /><br />
+    3. Experimenta escrever...
+    <input
+      type="text"
+      id="colorChangingInput"
+      oninput="randomizeInputColor()"
+    />
+    <br /><br /><br />
+    4. Escolha uma cor em inglês:
+    <input type="text" id="colorInput" oninput="changeBackgroundColor()" />
+    <button onclick="submitColor()">submeter</button>
+    <br /><br /><br />
+    5.
+    <button onclick="incrementCounter()">Conta!</button>
+    <span id="counter">0</span>
 
-      <section aria-label="Pintar o texto">
-        2. <span id="colorText">Pinta-me!</span>
-        <button type="button" class="color" data-color="red">Red</button>
-        <button type="button" class="color" data-color="green">Green</button>
-        <button type="button" class="color" data-color="blue">Blue</button>
-      </section>
-
-      <section aria-label="Escrever e mudar a cor">
-        <label for="colorChangingInput">3. Experimenta escrever....</label>
-        <input type="text" id="colorChangingInput" />
-      </section>
-
-      <section aria-label="Escolher a cor de fundo">
-        <form id="colorForm">
-          <label for="colorInput">4. Escolha uma cor em inglês:</label>
-          <input type="text" id="colorInput" required />
-          <button type="submit">submeter</button>
-        </form>
-      </section>
-
-      <section aria-label="Contador">
-        5.
-        <button type="button" id="incrementCounter">Conta!</button>
-        <span id="counter">0</span>
-      </section>
-    </main>
+    <script src="main.js"></script>
   </body>
 </html>
