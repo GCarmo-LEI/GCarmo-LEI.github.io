@@ -1,0 +1,50 @@
+main {
+  background-color: darkgrey;
+  margin: 10px 5px;
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  border: 1px solid grey;
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+section input {
+  margin: 3px;
+}
+
+form {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin: 5px 0;
+}
+
+li button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}

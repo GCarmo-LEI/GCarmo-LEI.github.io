@@ -87,24 +87,42 @@ header,
 
 #projetos {
   background-color: #eee;
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 20px;
   margin-top: 30px;
 }
 
 .cards article {
-  flex: 1;
+  min-width: 0;
+  min-height: 240px;
+  padding: 20px;
   background-color: white;
   border: 1px solid #aaa;
   border-radius: 5px;
-  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .cards h3 {
   margin-top: 0;
+}
+
+.cards p {
+  margin-bottom: 20px;
+}
+
+.cards .botao {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 #disciplina {
@@ -156,10 +174,6 @@ footer {
     font-size: 28px;
   }
 
-  .cards {
-    flex-direction: column;
-  }
-
   .sobre-disciplina {
     flex-direction: column;
   }
@@ -171,5 +185,18 @@ footer {
   .sobre-disciplina img {
     width: 100%;
     max-width: 300px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
